@@ -1,0 +1,248 @@
+/*
+Theme Name: Gaik Grigoryan
+Theme URI: http://gaik-grigoryan-exam/
+Description: Global Exam
+Author: Gaik Grigoryan
+Author URI: http://gaik-grigoryan-exam/
+Version: 1.0
+Tags: html, css, wordpress
+*/
+
+@import "compass";
+@import "grids";
+
+/*-----------------------------------------------*/
+/*-------------RESET DEFAULT STYLES--------------*/
+/*-----------------------------------------------*/
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@font-face {
+    font-family: Century Gothic Regular;
+    src: url(fonts/centurygothicregular.ttf);
+   }
+@import "typography";
+
+/*-----------------------------------------------*/
+/*--------------------WRAPPER--------------------*/
+/*-----------------------------------------------*/
+@include border-box-sizing();
+
+body {
+  font-family: 'Century Gothic Regular', Arial, 'sans-serif';
+  color: $dark-gray;
+  background-color: #f6f6f6;
+}
+
+h1,h2,h3,h4 {
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  color: $dark-gray;
+  text-decoration: none;
+  &:hover {
+	color: $ellow !important;
+
+  }
+}
+
+header .current-menu-item a {
+	color: $black !important;
+	border: 1px solid $ellow;
+	background-color: $ellow;
+	padding: 20px 10px ;
+}
+
+footer .current-menu-item a {
+	color: $ellow !important;
+	padding: 20px 10px ;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+}
+
+/*-----------------------------------------------*/
+/*--------------------HEADER---------------------*/
+/*-----------------------------------------------*/
+header {
+	@include container(1395px);
+	h1 {
+		float: left;
+		padding-top: 20px;
+	}
+}
+
+nav {
+	overflow: hidden;
+	margin-top: 50px;
+	display: inline-block;
+	float: right;
+}
+
+.headernav li {
+	display: inline-block;
+	margin-left: 80px;
+	a {
+		font-size: 16px;
+		line-height: 65px;
+		text-transform: uppercase;
+	}
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.page-title {
+	@include container();
+	background: url("images/bg.jpg") no-repeat;
+	height: 154px;
+	width: 100%;
+	padding: 40px 0 0 120px;
+	margin-bottom: 80px;
+	h3 {
+		display: inline-block;
+		width: 320px;
+		color: $ellow;
+		border: 1px solid $light-gray;
+		background-color: $light-gray;
+		padding: 25px 0 25px 25px;
+		font-size: 35px;
+	}
+}
+
+/*-----------------------------------------------*/
+/*---------------------NAV-----------------------*/
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+/*-------------------CONTENT---------------------*/
+/*-----------------------------------------------*/
+.container {
+	@include container();
+}
+
+.content {
+	@include span(8);
+}
+
+.quote {
+	@include span(4 of 8);
+	border: 1px solid $ellow;
+	background-color: $ellow;
+	font-family: Century Gothic Regular, sans-serif;
+	font-style: italic;
+	font-size: 21px;
+	line-height: 25px;
+	clear: $black;
+	padding: 10px 5px 5px 50px;
+	span {
+		font-size: 11px;
+		float: right;
+		line-height: 10px;
+	}
+}
+
+.our-posts {
+	@include span(4 of 8);
+	h3 {
+		font-size: 23px;
+		border: 1px solid $ellow;
+		background-color: $ellow;
+	}
+	span, p {
+		border: 1px solid $ellow;
+		background-color: $ellow;
+	}
+}
+
+/*-----------------------------------------------*/
+/*-------------------SIDEBAR---------------------*/
+/*-----------------------------------------------*/
+aside {
+	@include span(4 last);
+	float: right;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+#searchsubmit {
+	display: none;
+}
+
+.right-sidebar {
+	background-color: $dark-gray;
+	padding: 30px;
+	margin-top: 35px;
+	font-size: 16px;
+	color: $white;
+	&:first-child {
+		margin-top: 0;
+	}
+	ul li {
+		color: $white;
+	}
+}
+
+/*-----------------------------------------------*/
+/*--------------------FOOTER---------------------*/
+/*-----------------------------------------------*/
+footer {
+	overflow: hidden;
+}
+
+.container-topfooter{
+	background-color: $light-gray;
+	overflow: hidden;
+}
+
+.container-footer {
+	background-color: $black;
+	overflow: hidden;
+}
+
+.topfooter {
+	@include container(1395px);
+}
+
+.bottomfooter {
+	@include container(1395px);
+}
+
+.footernav {
+	float: right;
+	li {
+		display: inline-block;
+		margin-left: 80px;
+		a {
+			font-size: 16px;
+			line-height: 65px;
+			text-transform: uppercase;
+			color: $white;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.copyright {
+	float: left;
+	color: $white;
+	line-height: 65px;
+}

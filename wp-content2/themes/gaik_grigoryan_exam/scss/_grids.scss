@@ -1,0 +1,16 @@
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+  container: 1632px,
+  container-position: center,
+  global-box-sizing: border-box,
+
+  debug: (
+  image: hide,
+  color: rgba(#66f, .5),
+  output: background,
+  toggle: top right,
+  )
+);

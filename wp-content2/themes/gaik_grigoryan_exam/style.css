@@ -1,0 +1,357 @@
+/*
+Theme Name: Gaik Grigoryan
+Theme URI: http://gaik-grigoryan-exam/
+Description: Global Exam
+Author: Gaik Grigoryan
+Author URI: http://gaik-grigoryan-exam/
+Version: 1.0
+Tags: html, css, wordpress
+*/
+/*-----------------------------------------------*/
+/*-------------RESET DEFAULT STYLES--------------*/
+/*-----------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: Century Gothic Regular;
+  src: url(fonts/centurygothicregular.ttf);
+}
+html {
+  font-size: 87.5%;
+  line-height: 2.28571em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/*-----------------------------------------------*/
+/*--------------------WRAPPER--------------------*/
+/*-----------------------------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Century Gothic Regular', Arial, 'sans-serif';
+  color: #424147;
+  background-color: #f6f6f6;
+}
+
+h1, h2, h3, h4 {
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  color: #424147;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffea00 !important;
+}
+
+header .current-menu-item a {
+  color: #000 !important;
+  border: 1px solid #ffea00;
+  background-color: #ffea00;
+  padding: 20px 10px;
+}
+
+footer .current-menu-item a {
+  color: #ffea00 !important;
+  padding: 20px 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+}
+
+/*-----------------------------------------------*/
+/*--------------------HEADER---------------------*/
+/*-----------------------------------------------*/
+header {
+  max-width: 1395px;
+  max-width: 99.64286rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+header h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+nav {
+  overflow: hidden;
+  margin-top: 50px;
+  display: inline-block;
+  float: right;
+}
+
+.headernav li {
+  display: inline-block;
+  margin-left: 80px;
+}
+.headernav li a {
+  font-size: 16px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+.headernav li:first-child {
+  margin-left: 0;
+}
+
+.page-title {
+  max-width: 1632px;
+  max-width: 116.57143rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("images/bg.jpg") no-repeat;
+  height: 154px;
+  width: 100%;
+  padding: 40px 0 0 120px;
+  margin-bottom: 80px;
+}
+.page-title:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.page-title h3 {
+  display: inline-block;
+  width: 320px;
+  color: #ffea00;
+  border: 1px solid #414146;
+  background-color: #414146;
+  padding: 25px 0 25px 25px;
+  font-size: 35px;
+}
+
+/*-----------------------------------------------*/
+/*---------------------NAV-----------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-------------------CONTENT---------------------*/
+/*-----------------------------------------------*/
+.container {
+  max-width: 1632px;
+  max-width: 116.57143rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.content {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.quote {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  border: 1px solid #ffea00;
+  background-color: #ffea00;
+  font-family: Century Gothic Regular, sans-serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 25px;
+  clear: #000;
+  padding: 10px 5px 5px 50px;
+}
+.quote span {
+  font-size: 11px;
+  float: right;
+  line-height: 10px;
+}
+
+.our-posts {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+}
+.our-posts h3 {
+  font-size: 23px;
+  border: 1px solid #ffea00;
+  background-color: #ffea00;
+}
+.our-posts span, .our-posts p {
+  border: 1px solid #ffea00;
+  background-color: #ffea00;
+}
+
+/*-----------------------------------------------*/
+/*-------------------SIDEBAR---------------------*/
+/*-----------------------------------------------*/
+aside {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  float: right;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+#searchsubmit {
+  display: none;
+}
+
+.right-sidebar {
+  background-color: #424147;
+  padding: 30px;
+  margin-top: 35px;
+  font-size: 16px;
+  color: #fff;
+}
+.right-sidebar:first-child {
+  margin-top: 0;
+}
+.right-sidebar ul li {
+  color: #fff;
+}
+
+/*-----------------------------------------------*/
+/*--------------------FOOTER---------------------*/
+/*-----------------------------------------------*/
+footer {
+  overflow: hidden;
+}
+
+.container-topfooter {
+  background-color: #414146;
+  overflow: hidden;
+}
+
+.container-footer {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.topfooter {
+  max-width: 1395px;
+  max-width: 99.64286rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.topfooter:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.bottomfooter {
+  max-width: 1395px;
+  max-width: 99.64286rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottomfooter:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.footernav {
+  float: right;
+}
+.footernav li {
+  display: inline-block;
+  margin-left: 80px;
+}
+.footernav li a {
+  font-size: 16px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footernav li:first-child {
+  margin-left: 0;
+}
+
+.copyright {
+  float: left;
+  color: #fff;
+  line-height: 65px;
+}
